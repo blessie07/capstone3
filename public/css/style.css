@@ -1,0 +1,122 @@
+body {
+	background-color: yellow !important;
+}  
+
+.error-wrap {
+	margin: 30px;
+}
+
+.invite-wrap {
+	margin: 30px;
+}
+
+#wrapper {
+	border: 4px solid black;
+	margin: 20px;
+}
+
+.card {
+	background: none !important;
+	border: 3px solid black !important;
+}
+
+.navbar-brand {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.login-card {
+	
+	border-bottom: solid black 5px;
+}
+
+.login2 {
+	padding: 15px 15px 5px 15px;
+}
+
+.invite {
+	color: white;
+}
+
+.login-hr {
+	width: 100px;
+	height: 20px;
+	align-content: center;
+}
+
+.badge-success {
+	background: grey;
+}
+
+.fa-user-plus {
+	color: white !important;
+}
+
+.card-header {
+	color: white;
+}
+
+.wrapper-nav {
+	padding-top: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+.alert-success {
+	background: black;
+	color: white;
+}
+
+.right-side {
+	border: 4px dotted black;
+	padding: 20px;
+}
+
+.btn-outline-info {
+	border: black solid 1px;
+	color: black;
+	margin-left: 10px;
+}
+
+.btn-outline-info:hover {
+	border: black solid 1px;
+	color: white;
+	background: black;
+	margin-left: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.grey-text {
+	font-color: grey !important;
+	font-family: 'Raleway', sans-serif;
+}
+
+.index-body {
+	padding: 50px;
+	margin: 30px;
+	border: 4px solid black;
+	font-family: 'Raleway', sans-serif;
+}
+
+.task-name {
+	font-family: 'Raleway', sans-serif;
+	font-color: black;
+}
+
+.left-side {
+	padding: 30px;
+}
+
+.btn-primary {
+	background: black !important;
+	border: none !important;
+}
+
+.fa {
+	color: black;
+}
+
+p {
+	font-color: black !important;
+	font-family: 'Raleway', sans-serif;
+}
