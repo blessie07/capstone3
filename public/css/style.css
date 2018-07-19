@@ -1,33 +1,82 @@
 body {
-	background-color: yellow !important;
+	background-color: #0B0C10 !important;
+	font-family: 'Raleway', sans-serif;
+	color: #66FCF1;
 }  
 
 .error-wrap {
 	margin: 30px;
+	background: #1F2833 !important;
+}
+
+
+.navbar-wrap {
+	background: #1F2833 !important;
+	padding-right: 50px;
+	padding-left: 50px;
+	
+}
+
+.navbar-brand {
+	color: 	#66FCF1 !important;
+}
+
+.nav-link {
+	color: 	#66FCF1 !important;
 }
 
 .invite-wrap {
 	margin: 30px;
+	
+}
+
+.cardbody-wrap {
+	background: #C5C6C7;
+}
+
+.accept {
+	color: 	#45A29E;
+}
+
+.deny {
+	color: 	#1F2833;
+}
+
+.worker-invite {
+	color: 	#1F2833;
+}
+
+.card-header {
+	background: #1F2833;
+}
+
+.invite-cowrap {
+	background: #66FFFF !important;
+	font-color: black !important;
 }
 
 #wrapper {
-	border: 4px solid black;
+	border: 4px solid #66FCF1;
 	margin: 20px;
 }
 
 .card {
-	background: none !important;
-	border: 3px solid black !important;
+	
+	border: 3px solid #45A29E !important;
 }
 
 .navbar-brand {
-	color: black;
+	color: #66FCF1;
 	font-family: 'Raleway', sans-serif;
+}
+
+.intro {
+	color: 	#45A29E;
 }
 
 .login-card {
 	
-	border-bottom: solid black 5px;
+	border-bottom: solid #C5C6C7 5px;
 }
 
 .login2 {
@@ -35,7 +84,8 @@ body {
 }
 
 .invite {
-	color: white;
+	color: #C5C6C7;
+
 }
 
 .login-hr {
@@ -45,43 +95,53 @@ body {
 }
 
 .badge-success {
-	background: grey;
+	background: #66FCF1;
+	color: 	black;
 }
 
 .fa-user-plus {
-	color: white !important;
+	color: #C5C6C7 !important;
 }
 
 .card-header {
 	color: white;
 }
 
+.log-card {
+	background: #0B0C10;
+}
 .wrapper-nav {
 	padding-top: 20px;
 	font-family: 'Raleway', sans-serif;
-	color: black;
+	color: #66FCF1;
 }
 
 .alert-success {
-	background: black;
-	color: white;
+	background: #C5C6C7;
+	color: #0B0C10;
+	font-family: 'Raleway', sans-serif;
+}
+
+.duety {
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 .right-side {
-	border: 4px dotted black;
+	border: 4px dotted #66FCF1;
 	padding: 20px;
 }
 
 .btn-outline-info {
-	border: black solid 1px;
-	color: black;
+	border: #66FCF1 solid 1px;
+	color: #66FCF1;
 	margin-left: 10px;
 }
 
 .btn-outline-info:hover {
 	border: black solid 1px;
 	color: white;
-	background: black;
+	background: #0B0C10;
 	margin-left: 10px;
 	font-family: 'Raleway', sans-serif;
 }
@@ -94,7 +154,7 @@ body {
 .index-body {
 	padding: 50px;
 	margin: 30px;
-	border: 4px solid black;
+	border: 4px solid #66FCF1;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -108,15 +168,12 @@ body {
 }
 
 .btn-primary {
-	background: black !important;
-	border: none !important;
+	background: #1F2833 !important;
+	border: #C5C6C7 3px solid !important;
+	color: 	#C5C6C7;
 }
 
 .fa {
-	color: black;
+	color: #66FCF1;
 }
 
-p {
-	font-color: black !important;
-	font-family: 'Raleway', sans-serif;
-}

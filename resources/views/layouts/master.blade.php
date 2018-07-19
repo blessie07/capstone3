@@ -31,15 +31,15 @@
   </head>
   <body>
     
-    <div class="container">
+    <div class="container-fluid navbar-wrap">
     	<div class="row justify-content-between">
     		<nav class="navbar">
-    			<a href="#" class="navbar-brand">Project List</a>
+    			<a href="#" class="navbar-brand">DueTy in a Box</a>
     		</nav>
     		<div class="wrapper-nav">
     			<form id="logout-form" action="{{ route('logout') }}" method="POST" >
 			    @csrf
-			    	<p>Logged as <b>{{ Auth::user()->name }}</b> <button type="submit" class="btn btn-outline-info  "> Log Out </button></p>
+			    	<p class="accept">Logged as <b class="wrapper-nav">{{ Auth::user()->name }}</b> <button type="submit" class="btn btn-outline-info  "> Log Out </button></p>
 			    </form>
     		</div>
     	</div>		
@@ -67,9 +67,9 @@
 				      	
 				    @foreach($invitations as $invitation)
 
-				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">	
-				      	<div class="card-body">
-				        	<span> <b class="invite">{{ $invitation->worker->name }}</b><a href="{{ route('acceptInvitation', ['id' => $invitation->id])  }}"> accept</a> | <a href="{{ route('denyInvitation', ['id' => $invitation->id])  }}"> deny</a></span>
+				    <div id="collapseOne" class="collapse show invite-cowrap" aria-labelledby="headingOne" data-parent="#accordionExample">	
+				      	<div class="card-body cardbody-wrap">
+				        	<span> <b class="worker-invite">{{ $invitation->worker->name }}</b><a class="accept" href="{{ route('acceptInvitation', ['id' => $invitation->id])  }}"> accept</a> | <a class="deny" href="{{ route('denyInvitation', ['id' => $invitation->id])  }}"> deny</a></span>
 				      	</div>
 				    </div>
 				    @endforeach  	
@@ -82,7 +82,9 @@
 		@endif
 	@endisAdmin
 
-		<h1 class="text-center"><b class="login-card">Project Plan</b></h1>
+		<h1 class="text-center duety"><b class="login-card">DueTy in a Box</b></h1>
+
+        <h3 class="text-center intro">Here's your box and lies here your duties. <p> Do your work and you'll be someone's genie. </p></h3>
 		
 		<div class="error-wrap">
 			@include('partials.errors')

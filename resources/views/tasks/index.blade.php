@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-md-8 left-side">
 			<table class="table table-hover">
-				<thead class="thead-dark">
+				<thead class="thead-light">
 				    <tr class="text-center">
 				      <th scope="col">Task</th>
 				      <th scope="col">Description</th>
@@ -38,7 +38,7 @@
 				      <td>
 				      	<p class="task-name"> {{ $task->description }} </p>
 				      </td>
-				      <td>
+				      <td class="text-center">
 				      	<p class="task-name"> {{ $task->due }} </p>
 				      </td>
 				      @isAdmin
@@ -57,7 +57,7 @@
 					  <div class="modal-dialog" role="document">
 					    <div class="modal-content">
 					      <div class="modal-header">
-					        <h3 class="modal-title" id="exampleModalLabel"><b>Edit Task</b></h3>
+					        <h3 class="modal-title" id="exampleModalLabel"><b class="deny">Edit Task</b></h3>
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
@@ -78,46 +78,22 @@
 									{{Form::date('name', \Carbon\Carbon::now(), ['class' => 'form-control'])}}
 								</div>
 
-								@include('partials.coworkers')
+								<div class="form-group">
+									@include('partials.coworkers')
+								</div>
+								
 
-								{{Form::hidden('_method', 'PUT')}}
+								<!-- {{Form::hidden('_method', 'PUT')}} -->
 
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 									{{Form::submit('Save Changes', ['class' => 'btn btn-primary'])}}
-									}
-									
 								</div>
 
 								
 							
 							{!! Form::close() !!}
-
-
-					        <!-- <form method="POST" action="{{ route('update', ['id'=>$task->id]) }}" class="sm-12">
-								<div class="form-group">
-									
-									<input value="{{ $task->content }}" type="text" class="validate form-control" id="task2" name="task">
-									<br>
-									<input value="{{ $task->description }}" type="text" class="validate form-control" name="task-desc" placeholder="Describe task."></input>
-									<br>
-									<input value="{{ $task->due }}" type="text" class="datepicker validate form-control" name="date"></input>
-
-								</div>
-
-								@include('partials.coworkers')
-								<input type="hidden" name="PUT">
-								
-
-								@csrf -->
-							
-					      <!-- </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					        <button type="submit" class="btn btn-primary">Save changes</button>
-					      </div>
-					      </form> -->
-					    </div>
+						</div>
 					  </div>
 					</div>
 
@@ -142,17 +118,22 @@
 				</div>
 
 				<div class="form-group">
-					{{Form::text('task-desc', '', ['class' => 'validate form-control', 'placeholder' => 'Add Task Description'])}}
+					{{Form::text('task-desc', '', ['class' => 'validate form-control', 'placeholder' => 'What is this task about?'])}}
 				</div>
 
 				<div class="form-group">
 					{{Form::date('name', \Carbon\Carbon::now(), ['class' => 'form-control'])}}
 				</div>
 
-				@include('partials.coworkers')
+				<div class="form-group">
+					@include('partials.coworkers')
+				</div>
+				
 
-
-			{{Form::submit('Add New Task', ['class' => 'btn btn-primary'])}}
+				<div class="form-group">
+					{{Form::submit('Add New Task', ['class' => 'btn btn-primary'])}}
+				</div>
+			
 			{!! Form::close() !!}
 
 			<!-- <form method="POST" action="{{ route('store') }}" class="sm-12">

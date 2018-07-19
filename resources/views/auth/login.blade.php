@@ -26,7 +26,7 @@
     
     <div class="col-md-6">
 
-        <div class="card">
+        <div class="card log-card">
             <h3 class="text-center login2"><span class="fa fa-id-card-alt"></span>    <span></span><b class="login-card"> {{ __('Login') }}</b></h3>
 
                 <div class="card-body">

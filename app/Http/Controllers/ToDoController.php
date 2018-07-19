@@ -23,7 +23,7 @@ class ToDoController extends Controller
 
            $coworkers = Invitation::where('admin_id', Auth::user()->id)->where('accepted', 1)->get();
            $invitations = Invitation::where('admin_id', Auth::user()->id)->where('accepted', 0)->get();
-           $tasks = Task::where('user_id', Auth::user()->id)->orWhere('admin_id', Auth::user()->id)->orderBy('created_at', 'DESC')->paginate(4); 
+           $tasks = Task::where('user_id', Auth::user()->id)->orWhere('admin_id', Auth::user()->id)->orderBy('created_at', 'DESC')->paginate(5); 
         }
 
         else
@@ -145,10 +145,7 @@ class ToDoController extends Controller
             $task = Task::find($id);
             $task->content = $request->input('task');
             $task->description = $request->input('task-desc');
-            $task->due = $request->input('name');
-            
-
-            
+            $task->due = $request->input('name');         
 
             if(Auth::user()->is_admin)
             {

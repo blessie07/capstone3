@@ -23,7 +23,7 @@
         </div>
         
         <div class="col-md-6">
-            <div class="card">
+            <div class="card log-card">
                 <h3 class="text-center login2"><span class="fa fa-pencil-ruler"></span><span>    </span><b class="login-card"> {{ __('Register') }}</b></h3>
                 
                 <div class="card-body">
